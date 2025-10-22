@@ -1,8 +1,79 @@
-# FMI Funding Calculator - Complete Feature Guide
+# FMI Funding Calculator
 
-## 🎯 Transform Your Government Funding Process
+[![WordPress Plugin](https://img.shields.io/badge/WordPress-Plugin-blue.svg)](https://wordpress.org/)
+[![PHP Version](https://img.shields.io/badge/PHP-7.2%2B-8892BF.svg)](https://php.net/)
+[![License](https://img.shields.io/badge/License-GPL--2.0-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)](https://github.com/rejaulalomkhan/FMI-Funding-Calculator)
 
-The FMI Funding Calculator is a powerful, intelligent WordPress plugin designed to help businesses instantly calculate their eligible government funding for AI training programs. Built with precision and user experience in mind, it delivers professional-grade calculations that match official funding guidelines.
+> **A powerful, intelligent WordPress plugin for calculating government funding for AI training programs**
+
+Transform your business website with an interactive funding calculator that helps companies instantly understand their eligibility for government AI training subsidies. Built with precision and user experience in mind, delivering professional-grade calculations that match official funding guidelines.
+
+## 📸 Screenshots
+
+### Admin Settings Panel
+![Admin Settings](images/admin-settings.png)
+*Complete control over calculation parameters with an intuitive admin interface*
+
+### Calculator Interface
+![Calculator Interface](images/calculator-form.png)
+*Clean, professional calculator interface with instant real-time results*
+
+---
+
+## 🎯 Inspiration & Development
+
+This plugin is **inspired by and built to match the functionality** of the official [FMI Deutschland](https://www.fmi-deutschland.de/) funding calculator. We've carefully analyzed and replicated their calculation methodology to ensure accuracy and compliance with German government funding regulations.
+
+**Key Development Goals:**
+- ✅ Match exact calculation logic from FMI Deutschland
+- ✅ Replicate professional user experience
+- ✅ Ensure government-compliant funding estimates
+- ✅ Provide WordPress-native implementation
+- ✅ Add customization options for flexibility
+
+### Why This Plugin?
+
+The official FMI Deutschland calculator is excellent, but it's not embeddable in WordPress sites. This plugin brings that same functionality to your WordPress website with additional benefits:
+
+| Feature | FMI Deutschland | This Plugin |
+|---------|-----------------|-------------|
+| Calculation Accuracy | ✅ Official | ✅ Matching |
+| Real-time Updates | ✅ Yes | ✅ Yes (Zero delay) |
+| Mobile Responsive | ✅ Yes | ✅ Yes |
+| WordPress Integration | ❌ No | ✅ Native |
+| Customizable Rates | ❌ Fixed | ✅ Admin Panel |
+| FTE Calculator | ✅ Yes | ✅ Yes |
+| Age-Based Funding | ✅ Yes | ✅ Yes |
+| Self-Hosted | ❌ External | ✅ Your Site |
+| Branding | ❌ FMI | ✅ Your Brand |
+| Easy Installation | ❌ N/A | ✅ 1-Click |
+
+---
+
+## 📋 Table of Contents
+
+- [Key Highlights](#-key-highlights)
+- [Core Features](#-core-features)
+- [Calculation Methodology](#-calculation-methodology)
+- [Quick Start](#-quick-start)
+- [Technical Specifications](#-technical-specifications)
+- [Use Cases](#-use-cases--applications)
+- [Credits & Acknowledgments](#-credits--acknowledgments)
+- [Developer & Repository](#-developer--repository)
+
+---
+
+## ⭐ Key Highlights
+
+- 🚀 **Instant Real-Time Calculations** - Zero-delay responses to user input
+- 🏢 **Smart Company-Size Detection** - Automatic rate adjustments (75%/50%/25%)
+- 👥 **Built-in FTE Calculator** - Convert part-time hours to full-time equivalents
+- 🎂 **Age-Based Optimization** - Enhanced funding for employees over 45
+- 💰 **Transparent Breakdown** - Clear display of wage reimbursement + training value
+- ⚙️ **Flexible Admin Panel** - Customize all rates and values
+- 📱 **Fully Responsive** - Perfect on desktop, tablet, and mobile
+- 🔐 **Enterprise Security** - WordPress best practices with nonce validation
 
 ---
 
@@ -499,22 +570,43 @@ Perfect landing page calculator for:
 
 ## 🚀 Quick Start
 
-### Installation
+### Installation Methods
 
-1. Upload plugin to `/wp-content/plugins/` directory
-2. Activate through WordPress 'Plugins' menu
-3. Configure settings at **Settings → FMI Funding Calc**
-4. Add shortcode to any page: `[fmi_funding_calculator]`
+#### Method 1: WordPress Admin (Recommended)
+1. Download the latest release from [GitHub Releases](https://github.com/rejaulalomkhan/FMI-Funding-Calculator/releases)
+2. Go to **WordPress Admin → Plugins → Add New → Upload Plugin**
+3. Choose the downloaded ZIP file and click **Install Now**
+4. Click **Activate Plugin**
 
-### Shortcode Usage
+#### Method 2: Manual Installation
+1. Download the plugin files
+2. Upload the `fmi-funding-calculator` folder to `/wp-content/plugins/` directory
+3. Activate through WordPress **Plugins** menu
+4. Configure settings at **Settings → FMI Funding Calc**
+
+### Configuration
+
+1. Navigate to **WordPress Admin → Settings → FMI Funding Calc**
+2. Configure the basic parameters:
+   - Training value per employee: `€10,000` (default)
+   - Max reimbursement per employee: `€7,100` (default)
+   - Default training duration: `12 months` (default)
+3. Set company-size reimbursement rates:
+   - Under 50 employees: `0.75` (75%)
+   - 50-500 employees: `0.5` (50%)
+   - Over 500 employees: `0.25` (25%)
+4. Enable **"Full funding for employees over 45"** checkbox
+5. Click **Save Settings**
+
+### Usage
+
+Add the calculator to any page or post using the shortcode:
 
 ```php
-// Basic usage
 [fmi_funding_calculator]
-
-// That's it! No parameters needed.
-// All configuration done via admin panel.
 ```
+
+That's it! No parameters needed. All configuration is managed through the admin panel.
 
 ### Placement Recommendations
 
@@ -786,16 +878,88 @@ Every line of code, every design element, every calculation has been crafted to 
 
 ---
 
+## 🤝 Credits & Acknowledgments
+
+### Inspiration
+This plugin is **inspired by** and built to replicate the functionality of:
+- **[FMI Deutschland](https://www.fmi-deutschland.de/)** - Official German AI training funding calculator
+- Their professional implementation and accurate calculation methodology served as the foundation for this WordPress plugin
+
+### Technology Stack
+- **WordPress** 5.0+
+- **PHP** 7.2+
+- **jQuery** for frontend interactions
+- **WordPress AJAX API** for real-time calculations
+- **WordPress Settings API** for admin configuration
+
+---
+
 ## 👨‍💻 Developer & Repository
 
-**Developer:** [Rejaul Alom Khan](https://github.com/rejaulalomkhan)  
-**Repository:** [FMI-Funding-Calculator](https://github.com/rejaulalomkhan/FMI-Funding-Calculator)  
-**License:** Available on GitHub
+**Developed by:** [Rejaul Alom Khan](https://github.com/rejaulalomkhan)  
+**Repository:** [github.com/rejaulalomkhan/FMI-Funding-Calculator](https://github.com/rejaulalomkhan/FMI-Funding-Calculator)  
+**License:** GPL-2.0  
+**Version:** 1.0.0
 
 ### Contributing
 
-Found a bug or have a feature request? Feel free to open an issue on the [GitHub repository](https://github.com/rejaulalomkhan/FMI-Funding-Calculator).
+We welcome contributions! Here's how you can help:
+
+1. **Report Bugs**: Open an issue on [GitHub Issues](https://github.com/rejaulalomkhan/FMI-Funding-Calculator/issues)
+2. **Request Features**: Suggest new features via issues
+3. **Submit Pull Requests**: Fork the repo and submit PRs
+4. **Improve Documentation**: Help us make the docs better
+
+### Development Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/rejaulalomkhan/FMI-Funding-Calculator.git
+
+# Navigate to plugin directory
+cd FMI-Funding-Calculator
+
+# Create a symbolic link to your WordPress plugins folder
+# Or copy directly to wp-content/plugins/
+```
+
+### Reporting Issues
+
+When reporting issues, please include:
+- WordPress version
+- PHP version
+- Plugin version
+- Steps to reproduce
+- Expected vs actual behavior
+- Screenshots (if applicable)
 
 ### Updates & Releases
 
-Stay updated with the latest features and improvements by watching the repository or checking the releases page.
+- **Watch** the repository to get notified of updates
+- Check the [Releases page](https://github.com/rejaulalomkhan/FMI-Funding-Calculator/releases) for version history
+- Review the [Changelog](CHANGELOG.md) for detailed changes
+
+---
+
+## 📄 License
+
+This project is licensed under the **GPL-2.0 License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌟 Support
+
+If you find this plugin helpful:
+- ⭐ Star the repository on GitHub
+- 🐛 Report bugs to help improve it
+- 💡 Share your feedback and suggestions
+- 📢 Spread the word to others who might benefit
+
+---
+
+## 📞 Contact & Support
+
+- **GitHub Issues**: [Report bugs or request features](https://github.com/rejaulalomkhan/FMI-Funding-Calculator/issues)
+- **Developer**: [Rejaul Alom Khan](https://github.com/rejaulalomkhan)
+- **Documentation**: See [FEATURE-GUIDE.md](FEATURE-GUIDE.md) for detailed features
+- **Calculations**: See [CALCULATION-VERIFICATION.md](CALCULATION-VERIFICATION.md) for methodology
