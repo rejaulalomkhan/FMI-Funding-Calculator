@@ -23,7 +23,7 @@ Please add the following screenshot files to this directory:
 
 ## Current Status
 
-- [ ] admin-settings.png - Not yet added
-- [ ] calculator-form.png - Not yet added
+- [x] admin-settings.png - ✅ Added
+- [x] calculator-form.png - ✅ Added
 
-Once you add these images, they will automatically appear in the README.md file.
+These images are now displayed in the main README.md file.
