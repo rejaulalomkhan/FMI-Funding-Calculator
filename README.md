@@ -783,3 +783,19 @@ Every line of code, every design element, every calculation has been crafted to 
 **Last Updated:** October 22, 2025  
 **Status:** Production Ready  
 **Support:** Comprehensive documentation included
+
+---
+
+## 👨‍💻 Developer & Repository
+
+**Developer:** [Rejaul Alom Khan](https://github.com/rejaulalomkhan)  
+**Repository:** [FMI-Funding-Calculator](https://github.com/rejaulalomkhan/FMI-Funding-Calculator)  
+**License:** Available on GitHub
+
+### Contributing
+
+Found a bug or have a feature request? Feel free to open an issue on the [GitHub repository](https://github.com/rejaulalomkhan/FMI-Funding-Calculator).
+
+### Updates & Releases
+
+Stay updated with the latest features and improvements by watching the repository or checking the releases page.
